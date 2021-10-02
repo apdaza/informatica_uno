@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo simple mvc</title>
+    </head>
+    <body>
+        <section>
+            <nav>
+                <a href="/">Listar personas</a>
+                <a href="/agregar">Agregar persona</a>
+            </nav>
+            <h1>Editar Persona</h1>
+            <form action="/editar/{{ data['_id'] }}" method="POST">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" value="{{ data['nombre'] }}">
+            </p>
+            <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" value="{{ data['apellido'] }}">
+            </p>
+            <p>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad" value="{{ data['ciudad'] }}">
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+            </form>
+        </section>
+    </body>
+</html>

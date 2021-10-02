@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo simple mvc</title>
+    </head>
+    <body>
+        <section>
+            <nav>
+                <a href="/">Listar personas</a>
+                <a href="/agregar">Agregar persona</a>
+            </nav>
+            <h1>Agregar Persona</h1>
+            <form action="/agregar" method="POST">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido">
+            </p>
+            <p>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad">
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+            </form>
+        </section>
+    </body>
+</html>
